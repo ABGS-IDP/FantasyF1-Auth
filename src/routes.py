@@ -19,8 +19,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-db_url = "http://localhost"
-db_port = 8000
+db_url = os.getenv("DBAPI_URL")
+db_port = int(os.getenv("DBAPI_PORT", 8000))
 
 SECRET_KEY = os.getenv("SECRET_KEY", "your_secret_key")
 ALGORITHM = "HS256"
