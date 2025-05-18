@@ -35,4 +35,4 @@ jobs:
       with:
         token: ${{ secrets.GH_PAT }}
         repository: ABGS-IDP/Integration
-        event-type: swarm-deploy
+        event-type: pwd-deploy
